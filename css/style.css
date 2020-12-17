@@ -1,0 +1,99 @@
+* {
+    /*font-family: 'Caveat', cursive;*/
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+    color: white;
+}
+
+body {
+    background-color: #d92e38;
+}
+
+container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+container h1 {
+    font-size: 80px;
+}
+
+.we > div:nth-child(1){
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 30%;
+    height: 100%;
+}
+
+.we > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+}
+
+.heart, .heart:before, .heart:after {
+    display: block;
+    background-image: url("../resource/heart.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 70px;
+}
+
+.heart {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    margin-left: 60px;
+    transform: scale(2) rotateZ(-5deg);
+}
+
+.heart:before, .heart:after {
+    display: block;
+    content: '';
+    position: relative;
+
+}
+
+.heart:before {
+    width: 50px;
+    height: 45px;
+    top: -45px;
+    left: -50px;
+    transform: rotateZ(14deg);
+}
+
+.heart:after {
+    width: 35px;
+    height: 32px;
+    top: -85px;
+    right: -65px;
+    transform: rotateZ(-15deg);
+}
+
+.photo img{
+    width: 250px;
+    height: 400px;
+    background-color: bisque;
+    border: 10px solid black;
+}
+
+.img1 {
+    z-index: 1;
+    position: relative;
+    right: -40px;
+    transform: rotateZ(-12deg);
+}
+
+.img2 {
+    position: relative;
+    left: -40px;
+    transform: rotateZ(25deg);
+}
